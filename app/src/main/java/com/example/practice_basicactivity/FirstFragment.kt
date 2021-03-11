@@ -25,7 +25,7 @@ class FirstFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         view.findViewById<Button>(R.id.button_toCalendar).setOnClickListener {
-            findNavController().navigate(R.id.action_home_to_SecondFragment)
+            findNavController().navigate(R.id.action_FirstFragment_to_SecondFragment)
         }
         view.findViewById<Button>(R.id.button_toHealth).setOnClickListener {
             findNavController().navigate(R.id.action_FirstFragment_to_ThirdFragment)
