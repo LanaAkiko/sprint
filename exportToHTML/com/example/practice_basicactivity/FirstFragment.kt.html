@@ -1,0 +1,64 @@
+<html>
+<head>
+<title>FirstFragment.kt</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #000080; font-weight: bold;}
+.s1 { color: #000000;}
+.s2 { color: #808080; font-style: italic;}
+</style>
+</head>
+<body bgcolor="#ffffff">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#c0c0c0" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+FirstFragment.kt</font>
+</center></td></tr></table>
+<pre><span class="s0">package </span>com.example.practice_basicactivity
+
+import android.os.Bundle
+import androidx.fragment.app.Fragment
+import android.view.LayoutInflater
+import android.view.View
+import android.view.ViewGroup
+import android.widget.Button
+import androidx.navigation.fragment.findNavController
+
+<span class="s2">/**</span>
+ <span class="s2">* A simple [Fragment] subclass as the default destination in the navigation.</span>
+ <span class="s2">*/</span>
+<span class="s0">class </span>FirstFragment : Fragment() {
+
+    override <span class="s0">fun </span>onCreateView(
+            inflater: LayoutInflater, container: ViewGroup?,
+            savedInstanceState: Bundle?
+    ): View? {
+        <span class="s2">// Inflate the layout for this fragment</span>
+        <span class="s0">return </span>inflater.inflate(R.layout.fragment_first, container, <span class="s0">false</span>)
+    }
+
+    override <span class="s0">fun </span>onViewCreated(view: View, savedInstanceState: Bundle?) {
+        <span class="s0">super</span>.onViewCreated(view, savedInstanceState)
+
+        view.findViewById&lt;Button&gt;(R.id.button_toCalendar).setOnClickListener {
+            findNavController().navigate(R.id.action_FirstFragment_to_SecondFragment)
+        }
+        view.findViewById&lt;Button&gt;(R.id.button_toHealth).setOnClickListener {
+            findNavController().navigate(R.id.action_FirstFragment_to_ThirdFragment)
+        }
+        view.findViewById&lt;Button&gt;(R.id.button_toGrades).setOnClickListener {
+            findNavController().navigate(R.id.action_FirstFragment_to_FourthFragment)
+        }
+        view.findViewById&lt;Button&gt;(R.id.button_toTimer).setOnClickListener {
+            findNavController().navigate(R.id.action_FirstFragment_to_FifthFragment)
+        }
+        view.findViewById&lt;Button&gt;(R.id.button_toPlanner).setOnClickListener {
+            findNavController().navigate(R.id.action_FirstFragment_to_SixthFragment)
+        }
+        view.findViewById&lt;Button&gt;(R.id.button_toTodo).setOnClickListener {
+            findNavController().navigate(R.id.action_FirstFragment_to_SeventhFragment)
+        }
+    }
+}</pre>
+</body>
+</html>
