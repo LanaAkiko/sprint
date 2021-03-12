@@ -18,4 +18,9 @@
     <string name="planner">Planner/Timeline</string>
     <string name="todo">ToDo List</string>
 
+    <string name="timer_start">Start</string>
+    <string name="timer_pause">Pause</string>
+    <string name="timer_reset">Reset</string>
+    <string name="timer_content">Select your time: </string>
+
 </resources>

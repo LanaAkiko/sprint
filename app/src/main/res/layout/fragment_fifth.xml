@@ -10,10 +10,99 @@
         android:id="@+id/textview_second"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintBottom_toTopOf="@id/button_second"
+        android:layout_marginTop="77dp"
+        android:layout_marginBottom="46dp"
+        android:text="@string/timer"
+        app:layout_constraintBottom_toTopOf="@+id/timer"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.486"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/timer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="97dp"
+        android:text="@string/timer_content"
+        app:layout_constraintBottom_toTopOf="@+id/timer_pause"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/textview_second"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/timer5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="5"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.188"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textview_second"
+        app:layout_constraintVertical_bias="0.16" />
+
+    <Button
+        android:id="@+id/timer10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="10"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textview_second"
+        app:layout_constraintVertical_bias="0.16" />
+
+    <Button
+        android:id="@+id/timer15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="15"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.808"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textview_second"
+        app:layout_constraintVertical_bias="0.16" />
+
+    <Button
+        android:id="@+id/timer_start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/timer_start"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.188"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textview_second"
+        app:layout_constraintVertical_bias="0.277" />
+
+    <Button
+        android:id="@+id/timer_pause"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/timer_pause"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textview_second"
+        app:layout_constraintVertical_bias="0.264" />
+
+    <Button
+        android:id="@+id/timer_reset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/timer_reset"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.808"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textview_second"
+        app:layout_constraintVertical_bias="0.277" />
 
     <Button
         android:id="@+id/button_second"
@@ -22,6 +111,7 @@
         android:text="@string/home"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/textview_second" />
 </androidx.constraintlayout.widget.ConstraintLayout>
