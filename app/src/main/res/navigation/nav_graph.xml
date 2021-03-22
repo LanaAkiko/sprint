@@ -84,7 +84,7 @@
         android:id="@+id/ToDoList"
         android:name="com.example.practice_basicactivity.ToDoList"
         android:label="To Do List"
-        tools:layout="@layout/fragment_seventh">
+        tools:layout="@layout/ToDoList">
 
         <action
             android:id="@+id/act_listToHome"
