@@ -27,8 +27,8 @@
             android:id="@+id/action_FirstFragment_to_SixthFragment"
             app:destination="@id/SixthFragment" />
         <action
-            android:id="@+id/action_FirstFragment_to_SeventhFragment"
-            app:destination="@id/SeventhFragment" />
+            android:id="@+id/act_homeToList"
+            app:destination="@id/ToDoList" />
     </fragment>
     <fragment
         android:id="@+id/SecondFragment"
@@ -81,13 +81,13 @@
             app:destination="@id/FirstFragment" />
     </fragment>
     <fragment
-        android:id="@+id/SeventhFragment"
-        android:name="com.example.practice_basicactivity.SeventhFragment"
-        android:label="Seventh Fragment"
+        android:id="@+id/ToDoList"
+        android:name="com.example.practice_basicactivity.ToDoList"
+        android:label="To Do List"
         tools:layout="@layout/fragment_seventh">
 
         <action
-            android:id="@+id/action_SeventhFragment_to_FirstFragment"
+            android:id="@+id/act_listToHome"
             app:destination="@id/FirstFragment" />
     </fragment>
 </navigation>
