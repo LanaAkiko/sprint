@@ -40,7 +40,7 @@ class FirstFragment : Fragment() {
             findNavController().navigate(R.id.action_FirstFragment_to_SixthFragment)
         }
         view.findViewById<Button>(R.id.button_toTodo).setOnClickListener {
-            findNavController().navigate(R.id.action_FirstFragment_to_SeventhFragment)
+            findNavController().navigate(R.id.act_homeToList)
         }
     }
 }

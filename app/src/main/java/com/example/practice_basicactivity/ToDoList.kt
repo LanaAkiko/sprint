@@ -18,7 +18,7 @@ class ToDoList : Fragment() {
             savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.ToDoList, container, false)
+        return inflater.inflate(R.layout.todo_list, container, false)
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
