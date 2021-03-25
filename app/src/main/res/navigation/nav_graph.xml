@@ -16,7 +16,7 @@
             app:destination="@id/SecondFragment" />
         <action
             android:id="@+id/action_FirstFragment_to_ThirdFragment"
-            app:destination="@id/ThirdFragment" />
+            app:destination="@id/HealthMovement" />
         <action
             android:id="@+id/action_FirstFragment_to_FourthFragment"
             app:destination="@id/FourthFragment" />
@@ -41,13 +41,13 @@
             app:destination="@id/FirstFragment" />
     </fragment>
     <fragment
-        android:id="@+id/ThirdFragment"
-        android:name="com.example.practice_basicactivity.ThirdFragment"
-        android:label="Third Fragment"
-        tools:layout="@layout/fragment_third">
+        android:id="@+id/HealthMovement"
+        android:name="com.example.practice_basicactivity.HealthMovement"
+        android:label="Health and Movement"
+        tools:layout="@layout/health_movement">
 
         <action
-            android:id="@+id/action_ThirdFragment_to_FirstFragment"
+            android:id="@+id/act_healthToHome"
             app:destination="@id/FirstFragment" />
     </fragment>
     <fragment
@@ -84,7 +84,7 @@
         android:id="@+id/ToDoList"
         android:name="com.example.practice_basicactivity.ToDoList"
         android:label="To Do List"
-        tools:layout="@layout/ToDoList">
+        tools:layout="@layout/todo_list">
 
         <action
             android:id="@+id/act_listToHome"
