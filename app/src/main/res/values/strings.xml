@@ -23,4 +23,6 @@
     <string name="timer_reset">Reset</string>
     <string name="timer_content">Select your time: </string>
 
+    <string name="health_Water">8</string>
+
 </resources>

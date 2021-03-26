@@ -6,6 +6,8 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
+import android.widget.EditText
+import android.widget.TextView
 import androidx.navigation.fragment.findNavController
 
 /**
@@ -26,6 +28,10 @@ class HealthMovement : Fragment() {
 
         view.findViewById<Button>(R.id.button_second).setOnClickListener {
             findNavController().navigate(R.id.act_healthToHome)
+        }
+
+        view.findViewById<Button>(R.id.waterEnter).setOnClickListener {
+            view.findViewById<TextView>(R.id.health_notes).text = "Cups of water: " + view.findViewById<TextView>(R.id.waterNum).text
         }
     }
 }

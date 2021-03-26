@@ -16,17 +16,40 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+
     <EditText
-        android:id="@+id/aaaaaa"
+        android:id="@+id/waterNum"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:hint="type a number"
-        android:inputType="textAutoCorrect"
+        android:layout_marginBottom="520dp"
+        android:hint="Daily cups of water"
+        android:imeOptions="actionDone"
+        android:inputType="number"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.336"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/waterEnter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="520dp"
+        android:text="Enter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.88"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/health_notes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
         app:layout_constraintBottom_toTopOf="@id/button_second"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textview_second" />
-
+        app:layout_constraintTop_toBottomOf="@+id/waterNum" />
 
     <Button
         android:id="@+id/button_second"
