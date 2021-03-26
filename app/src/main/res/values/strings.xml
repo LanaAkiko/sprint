@@ -21,7 +21,7 @@
     <string name="timer_start">Start</string>
     <string name="timer_pause">Pause</string>
     <string name="timer_reset">Reset</string>
-    <string name="timer_content">Select your time: </string>
+    <string name="timer_content">00:00</string>
 
     <string name="health_Water">8</string>
 
