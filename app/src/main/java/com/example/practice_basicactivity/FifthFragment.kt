@@ -14,7 +14,7 @@ import androidx.navigation.fragment.findNavController
  * A simple [Fragment] subclass as the second destination in the navigation.
  */
 
-class Timer : Fragment() {
+class FifthFragment : Fragment() {
     private var running = false
     private var minutes = 0
     private var seconds = 0
