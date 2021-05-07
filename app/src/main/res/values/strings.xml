@@ -23,13 +23,6 @@
     <string name="timer_reset">Reset</string>
     <string name="timer_content">00:00</string>
 
-    <string name="health_water">Put the units??</string>
-    <string-array name="health_units">
-            <item>Seconds</item>
-            <item>Minutes</item>
-            <item>Hours</item>
-            <item>Count</item>
-            <item>Miles</item>
-            <item>Ounces</item>
-    </string-array>
+    <string name="health_Water">8</string>
+
 </resources>

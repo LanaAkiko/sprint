@@ -17,7 +17,7 @@
     </fragment>
     <fragment
         android:id="@+id/FirstFragment"
-        android:name="com.example.practice_basicactivity.FirstFragment"
+        android:name="com.example.practice_basicactivity.Homepage"
         android:label="@string/first_fragment_label"
         tools:layout="@layout/fragment_first">
 
@@ -42,7 +42,7 @@
     </fragment>
     <fragment
         android:id="@+id/SecondFragment"
-        android:name="com.example.practice_basicactivity.SecondFragment"
+        android:name="com.example.practice_basicactivity.Calendar"
         android:label="@string/second_fragment_label"
         tools:layout="@layout/fragment_second">
 
@@ -62,9 +62,9 @@
     </fragment>
     <fragment
         android:id="@+id/FourthFragment"
-        android:name="com.example.practice_basicactivity.FourthFragment"
+        android:name="com.example.practice_basicactivity.Grades"
         android:label="Fourth Fragment"
-        tools:layout="@layout/fragment_fourth">
+        tools:layout="@layout/grades">
 
         <action
             android:id="@+id/action_FourthFragment_to_FirstFragment"
@@ -82,7 +82,7 @@
     </fragment>
     <fragment
         android:id="@+id/SixthFragment"
-        android:name="com.example.practice_basicactivity.SixthFragment"
+        android:name="com.example.practice_basicactivity.Planner"
         android:label="Sixth Fragment"
         tools:layout="@layout/fragment_sixth">
 
