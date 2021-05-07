@@ -30,13 +30,39 @@ class HealthMovement : Fragment() {
             findNavController().navigate(R.id.act_healthToHome)
         }
 
+        val goalList = arrayOfNulls<String>(21) //can only have 7 items
+
         view.findViewById<Button>(R.id.waterEnter).setOnClickListener {
-            val a = view.findViewById<TextView>(R.id.health_notes)
-            val b = view.findViewById<TextView>(R.id.health_notes).text.toString() + "\n" + view.findViewById<TextView>(R.id.healthType).text + " goal: " + view.findViewById<TextView>(R.id.healthNum).text + " " + view.findViewById<TextView>(R.id.healthUnits).text
-            a.setText(b)
-            view.findViewById<TextView>(R.id.healthType).setText("")
-            view.findViewById<TextView>(R.id.healthNum).setText("")
-            view.findViewById<TextView>(R.id.healthUnits).setText("")
+            val type = view.findViewById<TextView>(R.id.healthType).text.toString()
+            val num = view.findViewById<TextView>(R.id.healthNum).text.toString()
+            val units = view.findViewById<TextView>(R.id.healthUnits).text.toString()
+            var goalString = ""
+
+            if (units == "" && goalList.contains(type)){
+                val i = goalList.indexOf(type)
+                val newNum = (goalList.get(i+1)?.toInt()?.minus(num.toInt()))
+                goalList.set(i+1, newNum.toString())
+            }
+
+            for (i in 0..6) {
+                var a = goalList.get(3*i)
+                var b = goalList.get(3*i +1)
+                var c = goalList.get(3*i +2)
+                if (a != null && b != null && c != null) {
+                    goalString += a + " goal: " + b + " " + c + "\n"
+                }
+
+                else if (!goalList.contains(type)){
+                    goalList.set(3*i, type)
+                    goalList.set(3*i +1, num)
+                    goalList.set(3*i +2, units)
+                    goalString += type + " goal: " + num + " " + units + "\n"
+                }
+            }
+            view.findViewById<TextView>(R.id.health_notes).text = goalString
+            view.findViewById<TextView>(R.id.healthType).text = ""
+            view.findViewById<TextView>(R.id.healthNum).text = ""
+            view.findViewById<TextView>(R.id.healthUnits).text = ""
         }
 
     }
