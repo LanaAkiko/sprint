@@ -19,8 +19,9 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TableLayout
-        android:layout_width="246dp"
-        android:layout_height="431dp"
+        android:id="@+id/tableLayout"
+        android:layout_width="260dp"
+        android:layout_height="355dp"
         android:layout_marginTop="100dp"
         android:paddingLeft="5dp"
         android:paddingRight="5dp"
@@ -83,24 +84,53 @@
             android:padding="10dp">
 
             <Button
-                android:id="@+id/button_toPlanner"
-                android:layout_width="wrap_content"
-                android:layout_height="50dp"
-                android:text="@string/planner" />
-        </TableRow>
-
-        <TableRow
-            android:layout_width="match_parent"
-            android:background="@color/white"
-            android:padding="10dp">
-
-            <Button
                 android:id="@+id/button_toTodo"
                 android:layout_width="wrap_content"
                 android:layout_height="50dp"
                 android:text="@string/todo" />
         </TableRow>
     </TableLayout>
+
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.801" />
+
+    <android.widget.TextClock
+        android:id="@+id/digitalClock"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:format12Hour="@null"
+        android:format24Hour="dd MMM yyyy   k:mm:ss"
+        android:textStyle="bold"
+        android:timeZone="GMT-0400"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.853" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.719" />
+
 
     <!-- <Button
             android:id="@+id/button_toCalendar"
